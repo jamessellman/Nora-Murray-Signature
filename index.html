@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Email Signature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet" />
     <style>
       body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        padding-top: 10px;
+        font-family: "Inter", sans-serif;
+        padding: 10px 10px;
       }
       table {
         border-spacing: 0;
         width: 100%;
         max-width: 600px;
-        margin: 0 auto;
+        margin: 0;
         color: #000;
-        font-size: 14px;
+        font-size: 11px;
         line-height: 1.5;
         table-layout: fixed;
       }
@@ -29,8 +34,8 @@
         display: block;
         border: none;
         border-radius: 50%;
-        width: 140px;
-        height: 140px; /* Match the red/orange background color */
+        width: 105px;
+        height: 105px; /* Match the red/orange background color */
       }
       a {
         color: #000;
@@ -40,26 +45,26 @@
         text-decoration: underline;
       }
       .signature-header {
-        font-size: 24px;
+        font-size: 13px;
         font-weight: bold;
-        margin: 0;
+        margin: 0 0 2px;
         line-height: 1.2;
       }
       .signature-subtitle {
-        font-size: 16px;
+        font-size: 11px;
         margin: 0 0 12px;
         line-height: 1.2;
       }
       .divider {
-        width: 150px;
+        width: 40px;
         height: 1px;
         background-color: #000;
-        margin: 0 0 12px 0;
+        margin: 5px 0 12px 0;
       }
       .signature-contact {
-        margin: 3px 0;
-        font-size: 16px;
-        line-height: 1.2;
+        margin: 1px 0;
+        font-size: 11px;
+        line-height: 1.3;
       }
       .disclaimer {
         font-size: 11px;
@@ -68,15 +73,16 @@
         text-align: justify;
       }
       .image-cell {
-        width: 120px;
-        text-align: center;
-        padding-right: 30px;
+        width: 100px;
+        text-align: left;
+        padding-right: 25px;
         vertical-align: middle;
       }
       .contact {
         padding-top: 0;
         vertical-align: middle;
-        padding-left: 5px;
+        padding-left: 0;
+        max-width: 400px;
       }
 
       /* Responsive layout for mobile */
@@ -113,7 +119,7 @@
     </style>
   </head>
   <body>
-    <table>
+    <table style="height: 100px">
       <tr>
         <td class="image-cell">
           <img
@@ -135,16 +141,6 @@
               >noramurray.com</a
             >
           </p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" class="disclaimer">
-          <em>
-            The content of this email is confidential and intended for the
-            recipient specified in the message only. It is strictly forbidden to
-            share any part of this message with any third party without the
-            sender's written consent.
-          </em>
         </td>
       </tr>
     </table>
