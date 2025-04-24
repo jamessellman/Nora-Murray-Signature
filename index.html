@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Email Signature</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding-top: 10px;
+      }
+      table {
+        border-spacing: 0;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        color: #000;
+        font-size: 14px;
+        line-height: 1.5;
+        table-layout: fixed;
+      }
+      td {
+        padding: 0;
+        vertical-align: top;
+      }
+      img {
+        display: block;
+        border: none;
+        border-radius: 50%;
+        width: 140px;
+        height: 140px; /* Match the red/orange background color */
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .signature-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1.2;
+      }
+      .signature-subtitle {
+        font-size: 16px;
+        margin: 0 0 12px;
+        line-height: 1.2;
+      }
+      .divider {
+        width: 150px;
+        height: 1px;
+        background-color: #000;
+        margin: 0 0 12px 0;
+      }
+      .signature-contact {
+        margin: 3px 0;
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      .disclaimer {
+        font-size: 11px;
+        color: #888;
+        padding-top: 10px;
+        text-align: justify;
+      }
+      .image-cell {
+        width: 120px;
+        text-align: center;
+        padding-right: 30px;
+        vertical-align: middle;
+      }
+      .contact {
+        padding-top: 0;
+        vertical-align: middle;
+        padding-left: 5px;
+      }
+
+      /* Responsive layout for mobile */
+      @media (max-width: 600px) {
+        tr {
+          display: block;
+        }
+        .image-cell {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+          padding-right: 0;
+        }
+        .contact {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+        }
+        .divider {
+          margin: 15px auto;
+        }
+        .image-cell img {
+          margin: 0 auto;
+        }
+        .disclaimer {
+          font-size: 11px;
+          color: #888;
+          padding: 10px;
+          text-align: justify;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="image-cell">
+          <img src="images/NM_Icon.png" alt="Nora Murray Logo" />
+        </td>
+        <td class="contact">
+          <p class="signature-header">Nora Murray</p>
+          <p class="signature-subtitle">Presence and Influence Coach</p>
+          <div class="divider"></div>
+          <p class="signature-contact">
+            <a href="tel:4192500016">419-250-0016</a>
+          </p>
+          <p class="signature-contact">
+            <a href="mailto:hello@noramurray.com">hello@noramurray.com</a>
+          </p>
+          <p class="signature-contact">
+            <a href="https://www.noramurray.com" target="_blank"
+              >noramurray.com</a
+            >
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="disclaimer">
+          <em>
+            The content of this email is confidential and intended for the
+            recipient specified in the message only. It is strictly forbidden to
+            share any part of this message with any third party without the
+            sender's written consent.
+          </em>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
